@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <title>My Personal portfolio</title>
+
+     <style id="sec1">
+    section.sec1{
+        width: 100%;
+        height: calc(60vh - 40px);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .inner.sec1 {
+        z-index: 1;
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .layer.sec1 {
+        background: #111;
+        height: 100%;
+        left: 0;
+        opacity: 0.3;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 0;
+    }
+
+    .text.sec1 {
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        font-family: "Orpheus";
+        font-size: 5.384615384615385em;
+        height: 100%;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin: 0 auto;
+        line-height: 100px;
+        position: relative;
+        text-align: center;
+        width: 80%;
+        z-index: 1;
+    }
+
+    video.sec1{
+        top: 0;
+        left: 50%;
+        opacity: 0;
+        -webkit-transition: 1.255s opacity ease-out;
+        transition: 1.255s opacity ease-out;
+        min-width: 100%;
+        height: calc(100vh - 80px);
+        object-fit: cover;
+        position: absolute;
+    }
+
+   
+    @media screen and (max-width: 544px) {
+        section.sec1 {
+            height: calc(100vh - 20px);
+        }
+
+        video.sec1 {
+            height: calc(100vh - 20px);
+        }
+
+        .inner.sec1 {
+            position: absolute;
+            top: 0;
+        }
+
+        .text.sec1 {
+            margin-top: 20px;
+        }
+    }
+     
+@keyframes bounceindown {
+  0% {
+    position: absolute;
+    top: -3rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: absolute;
+    top: 25%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes bottomFadeOut {
+  0% {
+    position: absolute;
+    bottom: -5rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: absolute;
+    bottom: 25%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+  
+}
+
+@keyframes rightFadeInOut {
+  0% {
+    position: absolute;
+    right: -3rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: absolute;
+    right: 10rem;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    right: 10rem;
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  45% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+
+.first-text {
+  font-size: 4rem;
+  position: absolute;
+  left: 2.5rem;
+  top: 5rem;
+  opacity: 0;
+  animation-name: bounceindown;
+  animation-duration: 20s;
+  color: white;
+}
+
+.second-text {
+  font-size: 4rem;
+  position: absolute;
+  top: 8.5rem;
+  opacity: 0;
+  animation-name: topFadeOut;
+  animation-delay: 25s;
+  animation-duration: 20s;
+  color: #ccc;
+}
+
+
+
+.fourth-text {
+  font-size: 4rem;
+  position: absolute;
+  top: 10.5rem;
+  left: 10%;
+  opacity: 0;
+  color: #F0A3BE;
+  animation-name: bounceindown;
+  animation-delay: 48.5s;
+  animation-duration: 20s;
+}
+
+.fifth-text {
+  font-size: 4rem;
+  position: absolute;
+  left: 5%;
+  bottom: 25%;
+  opacity: 0;
+  color: #F0EBA3;
+  animation-name: topFadeOut;
+  animation-delay: 70s;
+  animation-duration: 20s;
+}
+
+
+</style>
+    </style>
+    <style id="sec2">
+  
+
+    span.sec2{
+        position: relative;
+        opacity: 0;
+        display: inline-block;
+    }
+
+   
+    
+    </style>
+   
+    <style id="sec4">
+    header.sec4 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 20;
+    }
+    </style>
+    <style id="sec6">
+    @font-face {
+        font-family: 'OrpheusItalic';
+        src: url('/static/fonts/Orpheus_Pro_Italic.woff');
+    }
+
+    @font-face {
+        font-family: 'Orpheus';
+        src: url('/static/fonts/Orpheus_Pro.woff');
+    }
+
+    @font-face {
+        font-family: 'SolanelThin';
+        src: url('/static/fonts/solanel-thin.woff');
+    }
+
+    body {
+        background: #111111;
+        font-size: 13px;
+        line-height: 27px;
+        font-family: 'SolanelThin';
+        font-weight: normal;
+        color: #fff;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    body, html {
+        padding: 0;
+        margin: 0;
+    }
+
+    em {
+        font-style: unset;
+    }
+
+    ul, li {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    a {
+        -webkit-text-decoration: none;
+        text-decoration: none;
+        color: white;
+    }
+
+    img {
+        display: block;
+    }
+
+    h1, h2, h3, h4 {
+        font-weight: normal;
+    }
+
+    h1, h2, h3, p, ul, li {
+        margin: 0;
+        padding: 0;
+    }
+
+    button {
+        background: none;
+        border: 0;
+        box-shadow: none;
+        outline: 0;
+        cursor: pointer;
+    }
+
+    iframe {
+        border: 0;
+    }
+    </style>
+   
+   
+     <style id="sec9">
+    .inner em {
+        font-family: "OrpheusItalic";
+        font-style: normal;
+        vertical-align: top;
+        display: inline-block;
+        line-height: 85px;
+    }
+
+    @media screen and (max-width: 768px) {
+        .inner em {
+            line-height: 40px;
+        }
+    }
+    @keyframes topFadeOut {
+  0% {
+    position: absolute;
+    top: -3rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: absolute;
+    top: 25%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes bottomFadeOut {
+  0% {
+    position: absolute;
+    bottom: -5rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: absolute;
+    bottom: 25%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+  
+}
+
+
+
+@keyframes rightFadeInOut {
+  0% {
+    position: absolute;
+    right: -3rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: absolute;
+    right: 10rem;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    right: 10rem;
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  45% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+
+.first-text {
+  font-size: 4rem;
+  position: absolute;
+  left: 2.5rem;
+  top: 5rem;
+  opacity: 0;
+  animation-name: bounceindown;
+  animation-duration: 20s;
+  color: white;
+}
+
+.second-text {
+  font-size: 4rem;
+  position: absolute;
+  top: 8.5rem;
+  opacity: 0;
+  animation-name: topFadeOut;
+  animation-delay: 25s;
+  animation-duration: 20s;
+  color: #ccc;
+}
+
+
+
+.fourth-text {
+  font-size: 4rem;
+  position: absolute;
+  top: 10.5rem;
+  left: 10%;
+  opacity: 0;
+  color: #F0A3BE;
+  animation-name: bounceindown;
+  animation-delay: 48.5s;
+  animation-duration: 20s;
+}
+
+.fifth-text {
+  font-size: 4rem;
+  position: absolute;
+  left: 5%;
+  bottom: 25%;
+  opacity: 0;
+  color: #F0EBA3;
+  animation-name: topFadeOut;
+  animation-delay: 70s;
+  animation-duration: 20s;
+}
+    
+    </style>
+     <style id="sec10">
+    section.sec10 {
+        background: #edeef7;
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+    .container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+    .bg.sec10 {
+       
+        background-size: 100% auto;
+        -webkit-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        background-position: center top;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top;
+        min-width: 100%;
+    }
+
+    .inner.sec10 {
+        background: #edeef7;
+        color: #fff;
+        display: block;
+        font-family: "SolanelThin";
+        margin: 20px auto 0 auto;
+        max-width: 800px;
+        padding: 400px 20px 20px 10px;
+        position: relative;
+        text-align: center;
+        width: 90%;
+    }
+
+    h3.sec10 {
+        color: #9ea0ae;
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    @media screen and (max-width: 768px) {
+        .inner.sec10 {
+            box-sizing: border-box;
+            margin: 60px auto 0 auto;
+            padding: 40px 0px 0 0px;
+        }
+
+        h3.sec10 {
+            font-size: 2.3076923076923075em;
+            line-height: 1.5;
+        }
+    }
+
+    @media screen and (max-width: 544px) {
+        h3.sec10 {
+            font-size: 1.15em;
+            line-height: 1.4;
+        }
+
+        .text-container.sec10 {
+            font-size: 25px;
+        }
+    }
+    </style>
+    <style id="sec11">
+    .home-intro .inner em {
+        font-family: "OrpheusItalic";
+    }
+    </style>
+     <style id="sec12">
+    div.sec12 {
+        width: 100%;
+        height: 60px;
+        margin-top: 60px;
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    @media screen and (max-width: 768px) {
+        div.sec12 {
+            margin-top: 40px;
+            margin-bottom: 90px;
+            height: 40px;
+        }
+    }
+    </style>
+    <style id="sec13">
+    @media screen and (min-width: 1226px) {
+        .home-typologies > div > div:nth-child(3) > span:last-child, .home-typologies > div > div:nth-child(5) > span:last-child {
+            display: none;
+        }
+    }
+    </style>
+    <style id="sec14">
+    section.sec14 {
+        margin: 180px auto 80px auto;
+        display: block;
+        max-width: 1150px;
+        width: 90%;
+        text-align: center;
+        margin-bottom: 340px;
+        position: relative;
+    }
+
+    h3.sec14 {
+        font-size: 70px;
+        line-height: 100px;
+        font-family: "Orpheus";
+        color: #b9bbce;
+        }
+
+    @media screen and (max-width: 768px) {
+        section.sec14 {
+            margin-top: 0px;
+            margin-bottom: 160px;
+        }
+
+        h3.sec14 {
+            font-size: 2.3076923076923075em;
+            line-height: 1.5;
+        }
+
+        section.sec14 div.sec14 {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+    </style>
+     <style id="sec15">
+    section.sec15 {
+        padding-bottom: 120px;
+        background-color: #111;
+    }
+
+    ul.sec15, .btn_container.sec15{
+        max-width: 920px;
+        width: 80%;
+        position: relative;
+        margin: 0 auto 0 auto;
+    }
+
+    .btn_container.sec15 {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin-top: 100px;
+    }
+
+    @media screen and (max-width: 768px) {
+        section.sec15{
+            padding-bottom: 60px;
+        }
+
+        ul.sec15 {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+        }
+    }
+    </style>
+    <style id="sec16">
+    li.sec16 {
+        width: 50%;
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+    }
+
+    li.sec16:first-child {
+        margin-top: -240px;
+    }
+
+ 
+    
+    a.sec16 {
+        width: 80%;
+        position: relative;
+        display: inline-block;
+    }
+
+   
+       
+</style>
+<style id="sec17">
+    .footer_title em {
+        font-family: "OrpheusItalic";
+    }
+    </style>
+     <style id="sec17">
+    section.sec17 {
+        background-color: #111;
+        box-sizing: border-box;
+        color: white;
+        min-height: calc(100vw *(7 / 16));
+        padding: 100px 0 75px;
+        position: relative;
+        width: 100%;
+    }
+
+    .footer_content.sec17 {
+        max-width: 920px;
+        width: 80%;
+        position: relative;
+        margin: 0 auto 0 auto;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .footer_title.sec17 {
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        color: white;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        height: 100%;
+        position: relative;
+        font-size: 20px;
+        line-height: 100px;
+        font-family: "Orpheus";
+    }
+
+    .contact_container.sec17 {
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        font-family: "SolanelThin";
+        font-size: 20px;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        margin-top: 100px;
+    }
+
+
+
+    </style>
+    <style id="sec18">
+   
+    a.sec18::before, a.sec18::after {
+        content: "";
+        position: absolute;
+        bottom: 3px;
+        width: 100%;
+        border-bottom: 1px solid #fff;
+        left: 0;
+        -webkit-transition: 0.4s -webkit-transform ease-in-out;
+        -webkit-transition: 0.4s transform ease-in-out;
+        transition: 0.4s transform ease-in-out;
+    }
+
+    a.sec18::before {
+        -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        transform: translateX(-100%);
+        -webkit-transition-delay: 0.2s;
+        transition-delay: 0.2s;
+    }
+
+    @media (min-width: 1040px) {
+        a.sec18:hover.sec18::before {
+            -webkit-transform: translateX(0px);
+            -ms-transform: translateX(0px);
+            transform: translateX(0px);
+        }
+
+        a.sec18:hover.sec18::after {
+            -webkit-transform: translateX(100%);
+            -ms-transform: translateX(100%);
+            transform: translateX(100%);
+        }
+    }
+
+    @media (max-width: 544px) {
+        a.sec18::before, a.sec18::after {
+            display: none;
+        }
+    }
+    </style>
+  
+    
+<style>
+    table {
+  border-collapse: collapse;
+}
+table.solid {border-style: solid;}
+
+ }
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.column::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+.column div {
+  position: relative;
+  float: left;
+ 
+  padding: 0;
+}
+
+figure {
+ 
+  
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  overflow: hidden;
+}
+figure:hover+span {
+  
+  opacity: 1;
+}
+
+.hover11 figure img {
+  opacity: 1;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+.hover11 figure:hover img {
+  opacity: .5;
+}
+
+
+</style>
+
+<style>
+.mySlides {display:none;}
+</style>
+<style type>
+    .image-wrapper {
+  margin: 0 auto;
+ 
+  overflow: hidden;
+  font-size: 0;
+}
+img {
+
+  transition: transform 0.3s ease-in-out;
+}
+.image-wrapper:hover img {
+  transform: scale(1.2);
+}
+</style>
+<style>
+    .why-choose-us-content {
+  -webkit-transition-duration: 800ms;
+  -o-transition-duration: 800ms;
+  transition-duration: 800ms;
+  background-color: grey;
+  padding: 80px;
+  border-radius: 10px;
+  box-shadow: 3px 0 15px -1px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 1;
+  margin-top: 50px; }
+  .why-choose-us-content .chosse-us-icon {
+    -webkit-transition-duration: 800ms;
+    -o-transition-duration: 800ms;
+    transition-duration: 800ms;
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    display: inline-block;
+    text-align: center;
+    line-height: 76px;
+    border-radius: 50%;
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: -38px;
+    left: 50%;
+    margin-left: -38px; }
+  .why-choose-us-content h4 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    -webkit-transition-duration: 800ms;
+    -o-transition-duration: 800ms;
+    transition-duration: 800ms; }
+  .why-choose-us-content p {
+    -webkit-transition-duration: 800ms;
+    -o-transition-duration: 800ms;
+    transition-duration: 800ms;
+    font-size: 14px;
+    margin-bottom: 0; }
+  .why-choose-us-content:hover, .why-choose-us-content:focus {
+    background-color: orange; }
+    .why-choose-us-content:hover .chosse-us-icon, .why-choose-us-content:focus .chosse-us-icon {
+      background-color: orange;
+      box-shadow: 0 5px 15px 2px rgba(255, 255, 255, 0.15); }
+    .why-choose-us-content:hover h4,
+    .why-choose-us-content:hover p, .why-choose-us-content:focus h4,
+    .why-choose-us-content:focus p {
+      color: black; }
+
+
+
+<style>
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+    
+                        <div class="classy-menu">
+                           
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+                           
+                            <div class="classynav">
+                                <table id="nav" style="width:100%">
+                                    <tr>
+                                    <th class="active"><a href="#about">About</a></th>
+                                    <th><a href="#mygallery">My Gallery</a></th>
+                                    <th><a href="#social">Social</a></th>
+                                    <th><a href="#mywork">My Work</a></th>
+                                </tr>
+                            </table>
+
+                                <div class="search-icon" data-toggle="modal" data-target="#searchModal"><i class="ti-search"></i></div>
+                            </div>
+                           
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+   
+ 
+
+
+        
+            <div class="">
+                <main>
+                    <div>
+                        <section class="sec1 sec9">
+                            <div class="sec1 sec9 inner">
+                                <div class="sec1 sec9 text">
+                                    
+<div class="w3-content w3-section" style="max-width:800px">
+  <img class="mySlides" src="9.jpeg" style="width:100%">
+  <img class="mySlides" src="14.jpeg" style="width:100%">
+  <img class="mySlides" src="1.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+     <div class="first-text">HELLO!!!</br>Welcome to my small world</div>
+    <div class="second-text">Far from the reality or maybe nearer anyways</br>I will try to show you the better of what i was yesterday because</div>
+      <div class="fourth-text">Life is all about taking</br>Each moment and making the best of it</div>
+    <div class="fifth-text">And hopefully it wont be too late</br>Hopefully we will be just in time</div>
+  </section>
+
+
+
+
+                        <section class="sec11 sec10 home-intro" >
+                            <div class="sec11 sec10 bg"></div>
+                            <div class="sec11 sec10 inner">
+                                <div>
+                           
+                                   <div class="sec11 sec10 text-container">
+                                        <h3 class="sec11 sec10">
+                                            On the edge of hatred,heart-breaks,lonliness
+                                            <br/>
+
+                                            I make my own stories of faith
+                                            <br/>
+
+                                            and I love to tell to public through my poems.
+                                        </h3>
+                                      
+                                   
+                                    </div>
+                                </div>
+                                <div class="sec12" ></div>
+                            </div>
+                            <div >
+                        </br>
+                        </br>
+                        </br>
+                        </br></br>
+                            <section >
+                                <div id="mygallery">
+                                <center><table class="solid" cellpadding="10px"; border="1px solid white";  >
+  <tr>
+    <th>
+  <h2 id="demo11"></h2>
+<div class="hover11 column">
+  <div>
+    <figure><a href="project.html"> 
+        <img src="7.jpeg" style=" width: 400px "></a></figure>
+    <span style="color: black">What made me strong </br>was despite the million things that hurted me, </br>I believe in speaking of nothing. Nothing but happiness.
+
+</span>
+  </div></th>
+
+</tr>
+</table>
+<center><table class="solid" cellpadding="10px"; border="1px solid white";  style= width="100px"; background-color: black>
+<tr>
+      <th>
+      <h2 id="demo11"></h2>
+<div class="hover11 column">
+  <div>
+    <figure> <a href="project.html"></a><img src="12.jpeg" style="width: 400px"></a></figure>
+    <span style="color: black">Alone, by myself I believe in building the kingdom that I want</span>
+  </div></th>
+  <th>
+<h2 id="demo11"></h2>
+<div class="hover11 column">
+  <div>
+    <figure><a href="project.html"> <img src="17.jpeg" style="width: 400px"></a></figure>
+    <span style="color: black"> Full of wounds riddled with scars, but I will still try to stand </br>and will still maintain the beauty and dignity .</span>
+  </div></th>
+  
+  </tr>
+</table></center>
+
+
+                                
+                            </section>
+                        </br>
+                        </br>
+                        </br>
+                        </br>
+                        </br>
+                        </br>
+                        </br>
+                        </br>
+                        </br>
+                        </br>
+                        </br>
+                        </br>
+
+                        <section class="sec15">
+                            <ul class="sec15">
+                                <li class="sec16">
+                                    <div id="about">
+                                        
+                                      
+                                            <div class=" img-container">
+                                                <div class="image-wrapper">
+                              
+    
+                                                <img src="13.jpeg" style="height: 300px; width: 300px">
+                                            </div>
+                                        </br>
+                                    </br>
+                                            <h2 class="sec16">I may be broken for a while, but thats ok. I working on myself, cause I not one to leave a mess lying around.</br>
+                                                -JmStorm
+
+
+</h2>
+                                            
+                                        </a>
+                                    </div>
+                                </li>
+                                
+                            </ul>
+                        </section>
+                        <section class="sec17 sec18">
+                            <div></div>
+                            <div class="sec17 sec18 footer_content">
+                                <div class="sec17 sec18 footer_title">
+                                </div>
+                                <center><h1 style="font-size: 40px"><b>WHO AM I?</b></h1></center>
+                            </br>
+                        </br>
+                                    <h2>
+                                       A writer with a dilemated heart  and weird mood swings. It's the mood which decides my vibes. I don't run  away from attention, but it depends on the crowd I am in. In a lot of situations, I'm a  dilemated soul who is  just quietly observing.Like extroverts, I enjoy conversation — but, like introverts, I hate small talk. Speaking of  limits to my social comfort zone, I am comfortable socializing. I  really enjoy meeting new people, but I prefer to have my besties around me when I do it. I'm unlikely to run up and introduce myself to a complete stranger, I'm very bad at initiating talks with a stranger. I'd enjoy entire weekend alone rather than go out partying. I love to find myself in virtual complex situations and search for a clue to get back in terms.
+                                    </h2>
+                                </div>
+                                
+                                    
+                
+                        <p> </br></br></br></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+       <center> <h1>!!! MY HOBBIES!!!</h1></center>
+       <center> <table>
+            <tr>
+                <th colspan="1">
+                         <div class="col-md-6 col-lg-4">
+                    <div class="why-choose-us-content text-center mb-80 wow fadeInUp" data-wow-delay="100ms">
+                        
+                        <h4> Reading</h4>
+                        <p>I believe I can neverget a cup of coffee large enough or a book long enough to suit me  </br></br></p>
+                    </div>
+                </div></th></tr>
+
+
+               
+                <tr>
+                <th colspan="2">
+                <div class="col-md-6 col-lg-4">
+                    <div class="why-choose-us-content text-center mb-80 wow fadeInUp" data-wow-delay="300ms">
+                       
+                        <h4>Writing</h4>
+                        <p>There are few emotions which are hard to express. So i believe in giving those emotions a form of poetry where my words can express all the feelings ;)</p>
+                    </div>
+                </div> 
+                </th>
+                </tr>
+                </table> </center>         
+                        
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+  </section>
+  </br>
+  </br>
+  
+  <section>
+        <section>
+    <table>
+        <tr>
+            <th>
+      <div class="gallery">
+ 
+    <img src="a.jpeg" alt="Cinque Terre" style="width: 10px height10px">
+</div>
+</th>
+<th>
+ 
+<div class="gallery">
+  
+    <img src="b.jpeg" alt="Forest" style="width: 10px height10px">
+</div></th>
+  
+<th>
+<div class="gallery">
+  
+    <img src="c.jpeg" alt="Northern Lights" style="width: 10px height10px">
+  
+</div></th>
+<th>
+
+<div class="gallery">
+  
+    <img src="d.jpeg" alt="Mountains" style="width: 10px height10px">
+  
+</div></th>
+
+
+  </section>
+ 
+  <section>
+
+                     <table>
+                        <tr>
+                            <th>
+                        <div class="social-info" align="right" id="mywork">
+                            <a href="https://github.com"><i class="fa fa-google-plus-circle" style="font-size:36px"></i></a></th>
+                            <th>
+                                 <div class="social-info" align="right" id="social">
+                            <a href="https://www.facebook.com"><i class="fa fa-facebook-square" style="font-size:36px"></i></a></th>
+                            <th>
+                                 <div class="social-info" align="right" id="social">
+                            <a href="https://www.instagram.com/"><i class="fa fa-instagram" style="font-size:36px"></i></i></a></th>
+                            <th>
+                                 <div class="social-info" align="right" id="social">
+                               <a href="https://www.instagram.com/"> <i class="fa fa-linkedin-square" style="font-size:36px"></i></a></th>
+<br></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </table>
+   
+    </section>
+</body>
+</html>
